@@ -54,6 +54,7 @@ yarn add @caldwell619/react-kanban
 ```
 
 You will also need to install the peer dependencies on your own:
+
 ```json
   "peerDependencies": {
     "react": ">=16",
@@ -201,16 +202,17 @@ You can either style all the board or import our style and override it with the 
 
 ## Usage with Remix
 
-Shout out to [@vjanssens](https://github.com/vjanssens) for discovering there are some extra steps for compatibility with Remix. 
+Shout out to [@vjanssens](https://github.com/vjanssens) for discovering there are some extra steps for compatibility with Remix.
 
 Add the following to your Vite config:
+
 ```ts
 export default defineConfig({
   // the rest of your config
   ssr: {
-    noExternal: ["@caldwell619/react-kanban"]
+    noExternal: ['@caldwell619/react-kanban'],
   },
-});
+})
 ```
 
 ## Contributing

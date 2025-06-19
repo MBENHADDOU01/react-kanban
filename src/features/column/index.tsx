@@ -51,7 +51,7 @@ export const Column = function <TCard extends CardType>({
                     key={card.id}
                     index={index}
                     renderCard={(dragging: any) => renderCard(column, card, dragging)}
-                    disableCardDrag={disableCardDrag}
+                    disableCardDrag={disableCardDrag || (card.disableDrag ?? false)}
                   >
                     {card}
                   </Card>
